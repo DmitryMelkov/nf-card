@@ -237,7 +237,12 @@ input[type='number'] {
   flex-direction: column;
 }
 
+.card-block__right-content {
+  margin-bottom: 20px;
+}
+
 .card-block__title {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 20px;
   font-weight: 600;
@@ -245,9 +250,15 @@ input[type='number'] {
 }
 
 .card-block__descr {
-  text-align: center;
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
   color: black;
+}
+
+.card-block__name {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: gray;
 }

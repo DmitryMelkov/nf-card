@@ -240,9 +240,12 @@ input[type='number'] {
 }
 
 .card-block__right-inner {
+  padding-right: 15px;
+  height: 250px;
   display: grid;
   grid-template-columns: repeat(12, 4fr);
   gap: 20px;
+  overflow-y: scroll;
 }
 
 .card-block__right-item {

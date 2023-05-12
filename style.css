@@ -302,3 +302,26 @@ input[type='number'] {
   font-weight: 400;
   color: gray;
 }
+
+@media (max-width: 900px) {
+  /* .card-block__right-inner {
+    gap: 10px;
+  } */
+
+  .card-block__right-item {
+    grid-column: span 6;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .card-block__right-inner {
+    gap: 10px;
+    height: 230px;
+  }
+
+
+  .card-block__right-item {
+    grid-column: span 6;
+  }
+}

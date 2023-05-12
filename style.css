@@ -117,8 +117,6 @@ input[type='number'] {
   -moz-appearance: textfield;
 }
 
-
-
 /* card-block */
 
 .card-block {
@@ -237,8 +235,6 @@ input[type='number'] {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .card-block__title {

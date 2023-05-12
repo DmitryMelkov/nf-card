@@ -239,10 +239,19 @@ input[type='number'] {
   flex-direction: column;
 }
 
-.card-block__right-content {
-  margin-bottom: 20px;
+.card-block__right-inner {
+  display: grid;
+  grid-template-columns: repeat(12, 4fr);
+  gap: 20px;
+}
+
+.card-block__right-item {
+  grid-column: span 4;
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 8px;
 }
 
 .card-block__title {
@@ -263,16 +272,30 @@ input[type='number'] {
 }
 
 .card-block__subtitle {
+  text-transform: uppercase;
   margin-bottom: 10px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: black;
-}
-
-.card-block__name {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
+  color: grey;
+}
+
+.card-block__name-box {
+  display: flex;
+}
+
+.card-block__name {
+  margin-right: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 800;
+  color: black;
+}
+
+.card-block__name-percent {
+  margin-right: 5px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   color: gray;
 }

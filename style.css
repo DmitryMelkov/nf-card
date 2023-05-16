@@ -304,6 +304,95 @@ input[type='number'] {
   color: gray;
 }
 
+.atropos-rotate,
+.atropos-highlight {
+  animation-name: rotationRotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.atropos-rotate:hover,
+.atropos-highlight:hover {
+  animation-play-state: paused;
+}
+
+@keyframes rotationRotate {
+  0% {
+    transform: rotateX(30deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(0deg) rotateY(30deg);
+  }
+  50% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  75% {
+    transform: rotateX(0deg) rotateY(-30deg);
+  }
+  100% {
+    transform: rotateX(30deg) rotateY(0deg);
+  }
+}
+
+.card-block__box-p-2 {
+  animation-name: rotationP;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.atropos-rotate:hover .card-block__box-p-2 {
+  animation-play-state: paused;
+}
+
+@keyframes rotationP {
+  0% {
+    transform: translate3d(0%, -6%, 5px);
+  }
+  25% {
+    transform: translate3d(6%, 0%, 0px);
+  }
+  50% {
+    transform: translate3d(0%, 6%, 0px);
+  }
+  75% {
+    transform: translate3d(-6%, 0%, 0px);
+  }
+  100% {
+    transform: translate3d(0%, -6%, 5px);
+  }
+}
+
+.card-block__box-title-2 {
+  animation-name: rotationTitle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.atropos-rotate:hover .card-block__box-title-2 {
+  animation-play-state: paused;
+}
+
+@keyframes rotationTitle {
+  0% {
+    transform: translate3d(0%, -30%, 0px);
+  }
+  25% {
+    transform: translate3d(30%, 0%, 0px);
+  }
+  50% {
+    transform: translate3d(0%, 30%, 0px);
+  }
+  75% {
+    transform: translate3d(-30%, 0%, 0px);
+  }
+  100% {
+    transform: translate3d(0%, -30%, 5px);
+  }
+}
+
 @media (max-width: 900px) {
   /* .card-block__right-inner {
     gap: 10px;
@@ -313,7 +402,6 @@ input[type='number'] {
     grid-column: span 6;
   }
 }
-
 
 @media (max-width: 768px) {
   .card-block {
@@ -327,7 +415,6 @@ input[type='number'] {
     gap: 10px;
     height: 230px;
   } */
-
 
   .card-block__right-item {
     grid-column: span 6;

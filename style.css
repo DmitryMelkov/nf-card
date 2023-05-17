@@ -176,20 +176,8 @@ input[type='number'] {
   pointer-events: none;
 }
 
-/* .card-block__box img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  top: 15%;
-  left: 28%;
-  z-index: -1;
-  transform-style: preserve-3d;
-  opacity: 1;
-} */
 
 .card-block__box img {
-  /* width: 540px;
-  height: 540px; */
   position: absolute;
   top: 0;
   left: 0;
@@ -200,8 +188,8 @@ input[type='number'] {
 
 .card-block__box-title {
   position: absolute;
-  top: 0%;
-  left: 45%;
+  top: 10%;
+  left: 40%;
   z-index: 11;
   font-size: 22px;
   line-height: 30px;
@@ -210,7 +198,7 @@ input[type='number'] {
   text-align: center;
 }
 
-.card-block__box-title-1 {
+.card-block__box-title-under {
   color: rgba(235, 228, 228, 0.9);
   filter: blur(5px);
 }
@@ -229,7 +217,7 @@ input[type='number'] {
   text-align: center;
 }
 
-.card-block__box-p-1 {
+.card-block__box-p-under {
   color: rgba(235, 228, 228, 0.9);
   filter: blur(5px);
 }
@@ -304,18 +292,13 @@ input[type='number'] {
   color: gray;
 }
 
-.atropos-rotate,
-.atropos-highlight {
+.atropos-rotate__rotate {
   animation-name: rotationRotate;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-.atropos-rotate:hover,
-.atropos-highlight:hover {
-  animation-play-state: paused;
-}
 
 @keyframes rotationRotate {
   0% {
@@ -342,9 +325,7 @@ input[type='number'] {
   animation-timing-function: linear;
 }
 
-.atropos-rotate:hover .card-block__box-p-2 {
-  animation-play-state: paused;
-}
+
 
 @keyframes rotationP {
   0% {
@@ -371,9 +352,6 @@ input[type='number'] {
   animation-timing-function: linear;
 }
 
-.atropos-rotate:hover .card-block__box-title-2 {
-  animation-play-state: paused;
-}
 
 @keyframes rotationTitle {
   0% {
